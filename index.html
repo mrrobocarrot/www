@@ -10,11 +10,12 @@
 
 
             var iframe_url = url+params;
-		get();
 	
 		function get(){
             document.getElementById("iframe").src = url+window.location.search;
 		}
+	
+	window.onload = get;
 </script>
 
 <body>
