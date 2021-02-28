@@ -3,26 +3,10 @@
 <head>
 <title>VolunteerStudio Email Whitelist Instructions</title>
 	<style>
-html 
-{
- overflow: auto;
-}
- 
-html, body, div, iframe 
-{
- margin: 0px; 
- padding: 0px; 
- height: 100%; 
- border: none;
-}
-iframe 
-{
- display: block; 
- width: 100%; 
- border: none; 
- overflow-y: auto; 
- overflow-x: hidden;
-}
+  #iframe {
+        width: 1px;
+        min-width: 100%;
+      }
 		</style>
 <script>
 	            var url    = "https://vsfrontpage.bubbleapps.io/pscemail1";
@@ -38,15 +22,15 @@ iframe
 	
 	window.onload = get;
 
+	iFrameResize({
+    log: true,
+    checkOrigin: false,
+    heightCalculationMethod: 'grow'
+}, '#Iframe')
 </script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.min.js"></script>
 	
 <body>
-<div class="iframe-container"><iframe id="iframe" loading="lazy"      frameborder="0" 
-    marginheight="0" 
-    marginwidth="0" 
-    width="100%" 
-    height="100%" 
-    scrolling="auto" src=""></iframe></div>
+<iframe> id="iframe" frameborder="0" scrolling="no" src="" width="100%"></iframe>
 </body>
 </html>
