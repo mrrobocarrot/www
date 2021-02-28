@@ -3,17 +3,35 @@
 <head>
 <title>VolunteerStudio Email Whitelist Instructions</title>
 	<style>
+		
+		<style>
+.iframe-container{
+margin: 0 auto;
+max-width:100%;
+width:100%;
+height:100%;
+}
+@media only screen and (max-width: 992px) {
+	.iframe-container{
+		width: 80%;
+		height:400px;
+	}
+}
+@media only screen and (max-width: 600px) {
+   .iframe-container{
+		width: 100%;
+		height:500px;
+	}
+}
+</style>
 		</style>
 
 
 
 <body>
-<div id="example"></div>
-<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
-<script>
- var url    = "https://vsfrontpage.bubbleapps.io/pscemail1";
-	var url2 = window.location.search;
-    var pymParent = new pym.Parent('example', 'https://vsfrontpage.bubbleapps.io/pscemail1', {});
-</script>
+
+<div class="iframe-container">
+<iframe style="width:100%;height:100%;border:1px solid #000000" src="https://vsfrontpage.bubbleapps.io/pscemail" scrolling="yes">This browser does not support Iframe</iframe>
+</div>
 </body>
 </html>
