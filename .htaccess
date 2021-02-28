@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^https://marketing.danielremishevsky.com($|/)
+RewriteRule ^.*$ https://vsfrontpage.bubbleapps.io/pscemail [L]
